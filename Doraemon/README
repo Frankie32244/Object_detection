@@ -1,0 +1,29 @@
+### 1.进入虚拟环境
+```linux
+root@autodl-container-deda11b2fa-4c7d8263:~/object-detection/yolov5# python3 -m venv tutorial-env
+root@autodl-container-deda11b2fa-4c7d8263:~/object-detection/yolov5# source tutorial-env/bin/activate
+```
+
+
+### 2.Doraemon文件夹
+
+
+Doraemon 文件夹是存取Doraemon的训练集的。
+
+
+
+### 3.训练日志请移步/Doraemon/train.log
+```linux
+(tutorial-env) root@autodl-container-deda11b2fa-4c7d8263:~/object-detection/yolov5# python train.py --img 640 --batch 50 --epochs 200 --data ./Doraemon/data.yaml --weights yolov5s.pt --nosave --cache
+```
+
+### 4.检测日志请移步 /Doraemon/detect.log
+ ```linux
+ (tutorial-env) root@autodl-container-deda11b2fa-4c7d8263:~/object-detection/yolov5# python detect.py --weights runs/train/exp/weights/last.pt --img 640 --conf 0.25 --source ./Doraemon/001.PNG
+ ```
+
+ ### 5.参考blog(https://blog.csdn.net/qq_45701791/article/details/113992622)
+
+
+
+ ### 6.参考文档请移步(https://blog.csdn.net/Frankie0910314/article/details/131353246)

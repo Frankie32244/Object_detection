@@ -1,0 +1,9 @@
+(tutorial-env) root@autodl-container-deda11b2fa-4c7d8263:~/object-detection/yolov5# python detect.py --weights runs/train/exp/weights/last.pt --img 640 --conf 0.25 --source ./Doraemon/001.PNG 
+detect: weights=['runs/train/exp/weights/last.pt'], source=./Doraemon/001.PNG, data=data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-187-g0004c74 Python-3.8.10 torch-2.0.1+cu117 CUDA:0 (Tesla T4, 16120MiB)
+
+Fusing layers... 
+Model summary: 157 layers, 7012822 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /root/object-detection/yolov5/Doraemon/001.PNG: 608x640 1 Ameng, 35.3ms
+Speed: 0.6ms pre-process, 35.3ms inference, 4.0ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/exp

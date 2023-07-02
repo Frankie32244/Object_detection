@@ -1,0 +1,6 @@
+train: ../Doraemon/images
+val: ../Doraemon/images
+
+
+nc: 1
+names: ['Ameng']
